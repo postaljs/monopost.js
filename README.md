@@ -1,14 +1,14 @@
 # monopost.js - v0.1.0
 
 ## What is it?
-monopost is an adapter that bridges [monologue.js](https://github.com/ifandelse/monologue.js) to [postal.js](https://github.com/ifandelse/postal.js).  monologue - an event emitter utility - is a sister library to postal.js - a JavaScript message bus. In a nutshell, monologue is to the observer pattern, as postal is to the mediator pattern.  monologue's API and envelope are compatible with postal, and monopost adds an additional method to monologue's prototype that makes bridging events to the message bus very simple.
+[monopost](https://github.com/ifandelse/monopost.js) is an adapter that bridges [monologue.js](https://github.com/ifandelse/monologue.js) - an event emitter utility - to [postal.js](https://github.com/ifandelse/postal.js) - a JavaScript message bus. In a nutshell, monologue is to the observer pattern, as postal is to the mediator pattern. monopost adds an additional method to monologue's prototype that makes bridging events to the message bus very simple.
 
 ## How do I use it?
 
 #### Including it in your project
 First things first - monopost has three dependencies: underscore, postal and monologue.
 
-If you are using it in the browser, simply include monopost.js (it can act as a standard include or an AMD module).  If you are using it in node, the monopost.js module returns a function which takes underscore, monologue and postal as arguments.  This function must be invoked before monopost will take effect:
+If you are using it in the browser, simply include monopost.js (it can act as a standard include or an AMD module).  If you're not using an AMD loader, you will need to include monopost *after* its dependencies.  If you are using it in node, the monopost.js module returns a function which takes underscore, monologue and postal as arguments.  This function must be invoked before monopost will take effect:
 
 ```javascript
 var _ = require('underscore');
