@@ -1,0 +1,8 @@
+{
+	"name"    : "monopost",
+	"version" : "0.1.0",
+	"main"    : ["lib/browser/monopost.js"],
+	"dependencies": {
+		"underscore": "~1.1.7"
+	}
+}
