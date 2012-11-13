@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Monologue Tests</title>
+    <link rel="stylesheet" href="/ext/mocha.css" />
+</head>
+<body>
+<input type="button" id="doWork" value="Do Work">
+<script src="/ext/jquery-1.7.1.js"></script>
+<script src="/ext/underscore.js"></script>
+<script src="/ext/postal.js"></script>
+<script src="/ext/monologue.js"></script>
+<script src="/lib/browser/monopost.js"></script>
+<script type="text/javascript">
+    $(function(){
+        postal.addWireTap(function(d, e){
+            $('body').append("<div><pre>" + JSON.stringify(e, null, 4) + "</pre></div>");
+        });
+
+        var Worker = function(name) {
+            this.name = name;
+        };
+        Worker.prototype.doWork = function() {
+            this.emit("work.done", { who: this.name });
+        };
+        Monologue.mixin(Worker);
+
+        var instanceA = new Worker("YayWorker");
+        instanceA.goPostal("OnTheBusNowFolks");
+
+        $("#doWork" ).on('click', function(){
+            instanceA.doWork();
+        });
+    });
+</script>
+</body>
+</html>
