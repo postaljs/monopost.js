@@ -79,3 +79,5 @@ someObject.on("someEvent", function(arg1, arg2){
 
 **The point of monopost is to make the above boilerplate disappear.** Since monologue and postal share the same envelope structure (except that postal's envelope has the additional `channel` member), bridging the two is quite simple (as seen in the examples further above).
 
+You've probably noticed that monologue uses a 'single object payload' style for passing arguments to subscribers, as opposed to the '0-to-n arguments' approach most event emitters take. See [monologue's README](https://github.com/ifandelse/monologue.js) for more discussion behind the reason(s) for this approach.
+
