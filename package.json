@@ -1,5 +1,5 @@
 {
-    "name" : "monopost.js",
+    "name" : "monopost",
     "description" : "Monologue.js add-on that allows seamless bridging to postal.js.",
     "version" : "0.1.0",
     "homepage" : "https://github.com/ifandelse/monopost.js",
