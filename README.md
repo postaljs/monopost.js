@@ -77,5 +77,5 @@ someObject.on("someEvent", function(arg1, arg2){
 });
 ```
 
-**The point of monopost is to make the above boilerplate disappear.** Since monologue and postal share the same envelope structure (only postal's enveloper has the additional `channel` member), bridging the two is quite simple (as seen in the examples further above).
+**The point of monopost is to make the above boilerplate disappear.** Since monologue and postal share the same envelope structure (except that postal's envelope has the additional `channel` member), bridging the two is quite simple (as seen in the examples further above).
 
