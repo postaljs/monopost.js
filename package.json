@@ -1,7 +1,7 @@
 {
     "name" : "monopost",
     "description" : "Monologue.js add-on that allows seamless bridging to postal.js.",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "homepage" : "https://github.com/ifandelse/monopost.js",
     "repository" : {
         "type" : "git",

@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var postal = require('postal');
 var Monologue = require('monologue.js');
-var bridge = require('../../lib/node/monopost.js');
+var bridge = require('../../lib/monopost.js');
 
 bridge(_, Monologue, postal);
 
