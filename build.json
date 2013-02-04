@@ -1,11 +1,9 @@
 {
     "anvil.uglify" : {
-        "exclude" : ["./node/monopost.js"]
+        "all" : true
     },
-	"anvil.http" : {
-		"paths" : {
-			"/"         : "./"
-		}
+	"httpPaths" : {
+        "/" : "./"
 	},
-	"dependencies" : [ "anvil.http", "anvil.uglify" ]
+	"dependencies" : [ "anvil.uglify" ]
 }

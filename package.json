@@ -1,7 +1,7 @@
 {
     "name" : "monopost",
     "description" : "Monologue.js add-on that allows seamless bridging to postal.js.",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "homepage" : "https://github.com/ifandelse/monopost.js",
     "repository" : {
         "type" : "git",
@@ -24,13 +24,13 @@
         "email" : "jim@ifandelse.com",
         "url" : "http://github.com/ifandelse/monopost.js/issues"
    },
-	"directories" : { "lib" : "lib/node" },
-    "main" : "lib/node/monopost.js",
+	"directories" : { "lib" : "lib" },
+    "main" : "lib/monopost.js",
 	"engines" : {
 		"node" : ">=0.4.0"
 	},
 	"dependencies" : {
-		"underscore" : ">=1.1.7"
+		"underscore" : ">=1.4.2"
 	},
 	"bundleDependencies" : [ "underscore" ],
 	"devDependencies" : {},
